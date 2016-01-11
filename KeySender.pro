@@ -21,4 +21,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
+win32 {
+} else {
 LIBS += -lX11
+}

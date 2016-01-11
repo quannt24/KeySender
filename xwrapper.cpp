@@ -1,3 +1,5 @@
+#ifdef __linux__
+
 #include "xwrapper.h"
 #include <X11/Xlib.h>
 #include <stdio.h>
@@ -47,3 +49,5 @@ void XWrapper::sendKey(unsigned long keysym)
     XSync(disp, False);
     XCloseDisplay(disp);
 }
+
+#endif // #ifdef __linux__

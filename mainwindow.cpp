@@ -1,7 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "xwrapper.h"
 #include <QDebug>
+
+#ifdef __linux__
+#include "xwrapper.h"
+#endif
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,7 +20,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::sendKey(unsigned long keysym)
 {
+#ifdef __linux__
     XWrapper::sendKey(keysym);
+#endif
 }
 
 void MainWindow::on_pbA_clicked()
