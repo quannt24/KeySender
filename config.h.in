@@ -1,0 +1,2 @@
+#define KeySender_VERSION_MAJOR @KeySender_VERSION_MAJOR@
+#define KeySender_VERSION_MINOR @KeySender_VERSION_MINOR@

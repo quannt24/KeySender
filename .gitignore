@@ -1,3 +1,6 @@
+# Temporary files
+*.swp
+
 # C++ objects and libs
 
 *.slo
